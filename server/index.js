@@ -6,7 +6,7 @@ const app = express();
 
 //Middleware
 app.use(bodyParser.json());
-app.unsubscribe(cors());
+app.use(cors());
 
 const posts = require("./routes/api/posts");
 
